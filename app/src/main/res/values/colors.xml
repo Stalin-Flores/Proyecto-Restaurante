@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ==================== COLORES DE LOGIN / AUTENTICACIÓN ==================== -->
+    <color name="teal_bg">#00C2A8</color>
+    <color name="card_bg">#F4FBF9</color>
+    <color name="input_bg">#EAF5F2</color>
+    <color name="text_primary">#1F2D2B</color>
+    <color name="text_hint">#9CB0AC</color>
+    <color name="text_muted">#5A6C69</color>
+    <color name="green_light">#63E6C3</color>
+    <color name="green_main">#4CAF50</color>
+
+    <!-- ==================== COLORES DE RECETAS FIT ==================== -->
+    <color name="primary">#00C99E</color>
+    <color name="dark_gray">#222222</color>
+    <color name="medium_gray">#999999</color>
+    <color name="light_gray">#A0A0A0</color>
+    <color name="accent_light">#E8F5F1</color>
+
+</resources>

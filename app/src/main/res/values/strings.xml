@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- ==================== APP GENERAL ==================== -->
+    <string name="app_name">RESTAURANTE</string>
+
+    <!-- ==================== PANTALLA DE LOGIN ==================== -->
+    <string name="bienvenido">Bienvenido</string>
+    <string name="email_label">Email</string>
+    <string name="email_hint">ejemplo@email.com</string>
+    <string name="password_label">Contraseña</string>
+    <string name="password_hint">••••••••</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="separator_text">O ENTRAR CON</string>
+    <string name="no_account">¿No tienes una cuenta? </string>
+    <string name="register">Regístrate</string>
+
+    <!-- ==================== PANTALLA DE CREAR CUENTA ==================== -->
+    <string name="crear_cuenta_titulo">Crear Nueva Cuenta</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="password_help">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="btn_crear_cuenta">Crear Cuenta</string>
+
+    <!-- ==================== PANTALLA PRINCIPAL - RECETAS ==================== -->
+    <string name="recetas_fit">Recetas Fit</string>
+    <string name="search_hint">Buscar recetas saludables…</string>
+    <string name="cat_todas">Todas</string>
+    <string name="cat_desayuno">Desayuno</string>
+    <string name="cat_almuerzo">Almuerzo</string>
+    <string name="cat_cena">Cena</string>
+    <string name="recetas_para_ti">Recetas para ti</string>
+    <string name="ver_todas">Ver todas</string>
+
+    <!-- ==================== PLACEHOLDER (por eliminar) ==================== -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

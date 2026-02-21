@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ==================== ESTILOS DE RECETAS FIT ==================== -->
+
+    <!-- Título del header principal -->
+    <style name="TitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Título de secciones (ej: "Recetas para ti") -->
+    <style name="SectionTitleTextStyle">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Título de tarjeta de receta -->
+    <style name="RecipeTitleTextStyle">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Etiqueta de categoría (ej: "DESAYUNO", "ALMUERZO") -->
+    <style name="CategoryLabelStyle">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Texto secundario (ej: categorías no seleccionadas) -->
+    <style name="SecondaryTextStyle">
+        <item name="android:textColor">@color/medium_gray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Badge de valoración (ej: "★ 4.8") -->
+    <style name="BadgeTextStyle">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Texto de búsqueda placeholder -->
+    <style name="SearchHintTextStyle">
+        <item name="android:textColor">#B3FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Enlace "Ver todas" -->
+    <style name="ViewAllLinkStyle">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Texto de calorías (ej: "🔥 320 kcal") -->
+    <style name="CalorieTextStyle">
+        <item name="android:textColor">@color/medium_gray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Texto de tiempo de preparación -->
+    <style name="TimeTextStyle">
+        <item name="android:textColor">@color/medium_gray</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- Estilo de pill de categoría -->
+    <style name="CategoryPillStyle">
+        <item name="android:textColor">@color/medium_gray</item>
+    </style>
+
+</resources>
+
