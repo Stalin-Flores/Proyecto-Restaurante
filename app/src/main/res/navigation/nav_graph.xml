@@ -32,5 +32,9 @@
         android:id="@+id/detallesRecetaFragment"
         android:name="com.example.restaurante.DetallesRecetaFragment"
         android:label="fragment_detalles_receta"
-        tools:layout="@layout/fragment_detalles_receta" />
+        tools:layout="@layout/fragment_detalles_receta" >
+        <argument
+            android:name="recipe"
+            app:argType="com.example.restaurante.RecipeResponse" />
+    </fragment>
 </navigation>

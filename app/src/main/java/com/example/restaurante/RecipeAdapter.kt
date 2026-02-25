@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.restaurante.databinding.ItemRecipeLayoutBinding
 
 class RecipeAdapter(
-    private val recipes: List<Recipe>,
-    private val onItemClick: (Recipe) -> Unit
+    private val recipes: List<RecipeResponse>,
+    private val onItemClick: (RecipeResponse) -> Unit
 ) : RecyclerView.Adapter<ItemRecipeViewHolder>() {
 
     //Cantidad de celdas que se pintaran
