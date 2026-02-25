@@ -5,11 +5,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.restaurante.databinding.ItemRecipeLayoutBinding
 
-class RecipeAdapter: RecyclerView.Adapter<ItemRecipeViewHolder>() {
+class RecipeAdapter(
+    private val recipes: List<Recipe>,
+    private val onItemClick: (Recipe) -> Unit
+) : RecyclerView.Adapter<ItemRecipeViewHolder>() {
 
-    //Cantidad de celdas que se utilizaran (pintaran)
+    //Cantidad de celdas que se pintaran
     override fun getItemCount(): Int {
-        return 3
+        return recipes.size
     }
 
     //Instancia de la celda que se utilizara
@@ -30,10 +33,17 @@ class RecipeAdapter: RecyclerView.Adapter<ItemRecipeViewHolder>() {
         holder: ItemRecipeViewHolder,
         position: Int
     ) {
-        holder.binding.cat1.text = "DESAYUNO"
-        holder.binding.time.text = "25 min"
-        holder.binding.recipetitle.text = "Pollo Grillado con Ensalada"
-        holder.binding.calorie.text = "🔥 450 kcal"
-        holder.binding.imgrecipe.setImageResource(android.R.drawable.ic_menu_agenda)
+        val recipe = recipes[position]
+        holder.binding.apply {
+            cat1.text = recipe.category
+            time.text = recipe.time
+            recipetitle.text = recipe.title
+            calorie.text = recipe.calories
+            imgrecipe.setImageResource(recipe.imageRes)
+            
+            root.setOnClickListener {
+                onItemClick(recipe)
+            }
+        }
     }
 }
