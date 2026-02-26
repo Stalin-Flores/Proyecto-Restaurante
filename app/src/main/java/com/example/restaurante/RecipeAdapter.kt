@@ -10,12 +10,8 @@ class RecipeAdapter(
     private val onItemClick: (RecipeResponse) -> Unit
 ) : RecyclerView.Adapter<ItemRecipeViewHolder>() {
 
-    //Cantidad de celdas que se pintaran
-    override fun getItemCount(): Int {
-        return recipes.size
-    }
+    override fun getItemCount(): Int = recipes.size
 
-    //Instancia de la celda que se utilizara
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -28,18 +24,32 @@ class RecipeAdapter(
         return ItemRecipeViewHolder(binding)
     }
 
-    //Configuracion de las celdas
     override fun onBindViewHolder(
         holder: ItemRecipeViewHolder,
         position: Int
     ) {
         val recipe = recipes[position]
+        val context = holder.itemView.context
+        
         holder.binding.apply {
             cat1.text = recipe.category
             time.text = recipe.time
             recipetitle.text = recipe.title
             calorie.text = recipe.calories
-            imgrecipe.setImageResource(recipe.imageRes)
+            
+            // Obtener el ID del recurso dinámicamente usando el nombre
+            val imageResId = context.resources.getIdentifier(
+                recipe.imageName,
+                "drawable",
+                context.packageName
+            )
+            
+            if (imageResId != 0) {
+                imgrecipe.setImageResource(imageResId)
+            } else {
+                // Imagen por defecto si no se encuentra
+                imgrecipe.setImageResource(android.R.drawable.ic_menu_report_image)
+            }
             
             root.setOnClickListener {
                 onItemClick(recipe)

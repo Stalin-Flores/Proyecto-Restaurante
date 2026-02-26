@@ -80,7 +80,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PROTEIN" android:textColor="#FFFFFF" android:textSize="10sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32g" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/tvProtein"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32g" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -98,7 +100,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CARBS" android:textColor="#FFFFFF" android:textSize="10sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45g" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/tvCarbs"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45g" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -116,7 +120,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FATS" android:textColor="#FFFFFF" android:textSize="10sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12g" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/tvFat"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12g" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>

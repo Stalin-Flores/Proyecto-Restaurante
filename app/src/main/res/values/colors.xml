@@ -17,6 +17,8 @@
     <color name="medium_gray">#999999</color>
     <color name="light_gray">#A0A0A0</color>
     <color name="accent_light">#E8F5F1</color>
+    <color name="accent_dark">#E2F5EE</color>
+
 
     <!-- ==================== COLORES DE DETALLES-RECETAS FIT ==================== -->
     <color name="brand_green">#00D09C</color>

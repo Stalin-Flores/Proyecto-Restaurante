@@ -29,6 +29,7 @@ class StepPreparationAdapter(private val listStepsPreparation: List<StepPreparat
     ) {
         val stepsPreparation = listStepsPreparation[position]
         holder.binding.apply {
+            //Enumera los pasos par la preparacion
             tvStepNumber.text = (position + 1).toString()
             tvInstructionText.text = stepsPreparation.description
         }

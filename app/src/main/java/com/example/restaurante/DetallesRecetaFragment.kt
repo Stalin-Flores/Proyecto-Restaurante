@@ -28,20 +28,31 @@ class DetallesRecetaFragment : Fragment() {
 
         val recipe = args.recipe
 
-        // Poblar datos generales
         binding.apply {
             textrecipeTitle.text = recipe.title
             textrecipeDescription.text = recipe.description
             tvCaloriesDetail.text = recipe.calories
-            imgRecipeDetail.setImageResource(recipe.imageRes)
+            
+            // Estadísticas
+            tvProtein.text = recipe.stats.protein
+            tvCarbs.text = recipe.stats.carbs
+            tvFat.text = recipe.stats.fat
 
-            // Configurar RecyclerView de Ingredientes
+            // Imagen dinámica
+            val imageResId = requireContext().resources.getIdentifier(
+                recipe.imageName,
+                "drawable",
+                requireContext().packageName
+            )
+            if (imageResId != 0) {
+                imgRecipeDetail.setImageResource(imageResId)
+            }
+
             rvIngredients.apply {
                 layoutManager = LinearLayoutManager(requireContext())
                 adapter = IngredientesAdapter(recipe.ingredients)
             }
 
-            // Configurar RecyclerView de Pasos
             rvSteps.apply {
                 layoutManager = LinearLayoutManager(requireContext())
                 adapter = StepPreparationAdapter(recipe.steps)
