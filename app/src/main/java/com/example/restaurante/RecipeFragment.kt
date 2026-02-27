@@ -31,7 +31,7 @@ class RecipeFragment : Fragment() {
 
         //pasa datos del email a la vista
         val emailRecibido = args.userEmail
-        binding.tvTitulo.text = "Hola Bienvenido\n$emailRecibido"
+        binding.tvGreeting.text = "Hola Bienvenido\n$emailRecibido"
 
         // Cargar las recetas desde el JSON local
         val recipeList = loadRecipesFromJson()

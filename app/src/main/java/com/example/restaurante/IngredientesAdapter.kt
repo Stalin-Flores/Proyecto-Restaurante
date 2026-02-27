@@ -29,7 +29,7 @@ class IngredientesAdapter(private val listIngredients: List<IngredientesResponse
     ) {
         val ingredient = listIngredients[position]
         holder.binding.apply {
-            tvIngredientName.text = "${ingredient.description} ${ingredient.title}"
+            tvIngredientName.text = ingredient.description
         }
     }
 }

@@ -3,358 +3,785 @@
     "id": 1,
     "category": "Almuerzo",
     "time": "45 min",
-    "title": "Pasta Alfredo",
-    "calories": "600 kcal",
+    "servings": "2 porciones",
+    "title": "Pasta Alfredo con Pollo",
+    "calories": "680 kcal",
     "imageName": "pasta_alfredo",
-    "description": "Una deliciosa pasta cremosa con pollo y queso parmesano.",
-    "stats": { "protein": "25g", "carbs": "70g", "fat": "22g" },
+    "description": "Una exquisita y cremosa pasta italiana preparada con fettuccine al dente, trozos de pechuga de pollo sellados a la perfección y una salsa aterciopelada a base de crema de leche y queso parmesano genuino.",
+    "stats": { "protein": "38g", "carbs": "72g", "fat": "28g" },
     "ingredients": [
-      { "id": 1, "title": "Pasta", "description": "200g de fettuccine" },
-      { "id": 2, "title": "Pollo", "description": "1 pechuga troceada" }
+      { "id": 1, "description": "250g de pasta fettuccine de trigo duro." },
+      { "id": 2, "description": "200g de pechuga de pollo cortada en cubos." },
+      { "id": 3, "description": "200ml de crema de leche espesa." },
+      { "id": 4, "description": "80g de queso parmesano recién rallado." },
+      { "id": 5, "description": "30g de mantequilla sin sal y 2 dientes de ajo." }
     ],
     "steps": [
-      { "id": 1, "title": "Hervir", "description": "Cocinar pasta al dente." },
-      { "id": 2, "title": "Salsa", "description": "Mezclar crema y queso." }
+      { "id": 1, "description": "Cocinar la pasta en abundante agua con sal hasta que esté al dente; reservar un poco de agua." },
+      { "id": 2, "description": "Sellar el pollo en mantequilla y ajo, luego añadir la crema y el queso hasta espesar." },
+      { "id": 3, "description": "Mezclar la pasta con la salsa cremosa y añadir pimienta negra recién molida." },
+      { "id": 4, "description": "Emplata con un toque extra de queso parmesano, ¡servir y disfrutar de esta delicia!" }
     ]
   },
   {
     "id": 2,
     "category": "Desayuno",
-    "time": "15 min",
-    "title": "Panqueques de Avena",
-    "calories": "350 kcal",
+    "time": "20 min",
+    "servings": "2 porciones",
+    "title": "Panqueques de Avena y Plátano",
+    "calories": "380 kcal",
     "imageName": "panqueques_avena",
-    "description": "Panqueques saludables ideales para empezar el día.",
-    "stats": { "protein": "12g", "carbs": "45g", "fat": "8g" },
+    "description": "Una opción de desayuno saludable y energética, estos panqueques son esponjosos, naturalmente dulces gracias al plátano maduro y muy ricos en fibra.",
+    "stats": { "protein": "15g", "carbs": "52g", "fat": "10g" },
     "ingredients": [
-      { "id": 3, "title": "Avena", "description": "1 taza" },
-      { "id": 4, "title": "Huevo", "description": "1 unidad" }
+      { "id": 1, "description": "1 taza de hojuelas de avena integral." },
+      { "id": 2, "description": "1 plátano maduro grande hecho puré." },
+      { "id": 3, "description": "1 huevo de corral y 1/2 taza de leche de almendras." },
+      { "id": 4, "description": "1 cucharadita de vainilla y canela en polvo." }
     ],
     "steps": [
-      { "id": 3, "title": "Mezclar", "description": "Licuar ingredientes." },
-      { "id": 4, "title": "Cocinar", "description": "Dora en sartén." }
+      { "id": 1, "description": "Licuar todos los ingredientes hasta obtener una mezcla homogénea y sin grumos." },
+      { "id": 2, "description": "Cocinar porciones de la mezcla en una sartén antiadherente a fuego medio hasta que doren." },
+      { "id": 3, "description": "Acompañar con miel de abeja, arándanos o frutas frescas de estación." },
+      { "id": 4, "description": "Presenta en un plato colorido, ¡servir y disfrutar de un inicio de día con energía!" }
     ]
   },
   {
     "id": 3,
     "category": "Cena",
     "time": "30 min",
-    "title": "Ensalada César con Pollo",
+    "servings": "2 porciones",
+    "title": "Ensalada César con Pollo Grillé",
     "calories": "420 kcal",
     "imageName": "ensalada_cesar",
-    "description": "Clásica ensalada con aderezo casero y crutones.",
-    "stats": { "protein": "30g", "carbs": "15g", "fat": "28g" },
+    "description": "La clásica combinación de hojas de lechuga romana fresca, crutones crujientes y láminas de pollo a la plancha, todo bañado en un aderezo César casero equilibrado.",
+    "stats": { "protein": "32g", "carbs": "12g", "fat": "26g" },
     "ingredients": [
-      { "id": 5, "title": "Lechuga", "description": "1 unidad" },
-      { "id": 6, "title": "Pollo", "description": "150g a la plancha" }
+      { "id": 1, "description": "1 cabeza de lechuga romana fresca." },
+      { "id": 2, "description": "250g de pechuga de pollo sazonada." },
+      { "id": 3, "description": "50g de crutones de pan al ajo." },
+      { "id": 4, "description": "3 cucharadas de aderezo César y queso parmesano." }
     ],
     "steps": [
-      { "id": 5, "title": "Cortar", "description": "Trozar la lechuga." },
-      { "id": 6, "title": "Mezclar", "description": "Añadir aderezo y pollo." }
+      { "id": 1, "description": "Cocinar el pollo a la plancha hasta que esté jugoso y cortarlo en tiras largas." },
+      { "id": 2, "description": "Mezclar la lechuga con la mitad del aderezo y colocarla en un bowl grande." },
+      { "id": 3, "description": "Añadir el pollo, los crutones y las láminas de queso parmesano por encima." },
+      { "id": 4, "description": "Lleva a la mesa de inmediato para mantener lo crujiente, ¡servir y disfrutar con frescura!" }
     ]
   },
   {
     "id": 4,
     "category": "Almuerzo",
-    "time": "50 min",
-    "title": "Arroz con Pollo",
-    "calories": "550 kcal",
+    "time": "55 min",
+    "servings": "2 porciones",
+    "title": "Arroz con Pollo Peruano",
+    "calories": "580 kcal",
     "imageName": "arroz_pollo",
-    "description": "Arroz verde tradicional con presa de pollo.",
-    "stats": { "protein": "28g", "carbs": "65g", "fat": "18g" },
+    "description": "Un pilar de la cocina peruana. Arroz graneado aromatizado con cilantro licuado y ají amarillo, acompañado de presas de pollo doradas y verduras frescas.",
+    "stats": { "protein": "35g", "carbs": "75g", "fat": "18g" },
     "ingredients": [
-      { "id": 7, "title": "Arroz", "description": "1 taza" },
-      { "id": 8, "title": "Cilantro", "description": "50g licuado" }
+      { "id": 1, "description": "2 presas de pollo grandes (pierna y encuentro)." },
+      { "id": 2, "description": "2 tazas de arroz de grano largo." },
+      { "id": 3, "description": "1/2 taza de cilantro licuado y 1 cucharada de ají amarillo." },
+      { "id": 4, "description": "1/2 taza de arvejas, zanahoria en cubos y pimiento." }
     ],
     "steps": [
-      { "id": 7, "title": "Dorar", "description": "Sellar el pollo." },
-      { "id": 8, "title": "Cocinar", "description": "Cocinar con el arroz." }
+      { "id": 1, "description": "Dorar el pollo y luego preparar el aderezo de cebolla, ajo, ají y cilantro." },
+      { "id": 2, "description": "Añadir el arroz, las verduras y el caldo; cocinar a fuego bajo hasta que granée." },
+      { "id": 3, "description": "Regresar el pollo a la olla para que termine de cocinarse con el vapor del arroz." },
+      { "id": 4, "description": "Acompaña con una salsa criolla, ¡servir y disfrutar de este sabor tradicional!" }
     ]
   },
   {
     "id": 5,
     "category": "Desayuno",
-    "time": "10 min",
-    "title": "Tostadas de Aguacate",
-    "calories": "280 kcal",
+    "time": "15 min",
+    "servings": "1 porción",
+    "title": "Tostadas de Aguacate y Huevo",
+    "calories": "320 kcal",
     "imageName": "tostadas_aguacate",
-    "description": "Pan integral tostado con aguacate y huevo poché.",
-    "stats": { "protein": "10g", "carbs": "25g", "fat": "16g" },
+    "description": "Un desayuno equilibrado que combina grasas saludables del aguacate con la proteína del huevo sobre un pan artesanal tostado.",
+    "stats": { "protein": "14g", "carbs": "22g", "fat": "20g" },
     "ingredients": [
-      { "id": 9, "title": "Pan Integral", "description": "2 rebanadas" },
-      { "id": 10, "title": "Aguacate", "description": "1/2 unidad" }
+      { "id": 1, "description": "2 rebanadas de pan integral de masa madre." },
+      { "id": 2, "description": "1/2 aguacate maduro machacado con limón." },
+      { "id": 3, "description": "1 huevo de corral (poché o frito)." },
+      { "id": 4, "description": "Sal de mar, pimienta y hojuelas de chile." }
     ],
     "steps": [
-      { "id": 9, "title": "Tostar", "description": "Dorar el pan." },
-      { "id": 10, "title": "Armar", "description": "Untar aguacate y sazonar." }
+      { "id": 1, "description": "Tostar el pan y untar el aguacate sazonado con limón y sal." },
+      { "id": 2, "description": "Colocar el huevo sobre el aguacate y sazonar con pimienta y chile." },
+      { "id": 3, "description": "Decorar con un chorrito de aceite de oliva virgen extra." },
+      { "id": 4, "description": "Emplata con un toque de hierbas frescas, ¡servir y disfrutar de este manjar saludable!" }
     ]
   },
   {
     "id": 6,
     "category": "Postre",
-    "time": "60 min",
-    "title": "Cheesecake de Fresa",
-    "calories": "480 kcal",
+    "time": "4 horas",
+    "servings": "8 porciones",
+    "title": "Cheesecake de Fresa Frío",
+    "calories": "450 kcal",
     "imageName": "cheesecake_fresa",
-    "description": "Postre frío cremoso con mermelada de fresa.",
-    "stats": { "protein": "6g", "carbs": "55g", "fat": "30g" },
+    "description": "Delicado pastel de queso sin horno, con una base crujiente de galleta y una cobertura de mermelada de fresa natural que aporta frescura.",
+    "stats": { "protein": "8g", "carbs": "50g", "fat": "28g" },
     "ingredients": [
-      { "id": 11, "title": "Queso crema", "description": "200g" },
-      { "id": 12, "title": "Galletas", "description": "100g para la base" }
+      { "id": 1, "description": "200g de galletas tipo María trituradas." },
+      { "id": 2, "description": "400g de queso crema y 200ml de crema para batir." },
+      { "id": 3, "description": "100g de azúcar glass y 15g de gelatina sin sabor." },
+      { "id": 4, "description": "200g de fresas frescas para el coulis superior." }
     ],
     "steps": [
-      { "id": 11, "title": "Base", "description": "Triturar galletas." },
-      { "id": 12, "title": "Mezclar", "description": "Batir queso y enfriar." }
+      { "id": 1, "description": "Mezclar galletas con mantequilla, formar la base y refrigerar." },
+      { "id": 2, "description": "Batir el queso con azúcar y crema; añadir la gelatina disuelta y verter al molde." },
+      { "id": 3, "description": "Refrigerar por 4 horas y cubrir con la salsa de fresas naturales." },
+      { "id": 4, "description": "Desmolda con cuidado antes de llevar a la mesa, ¡servir y disfrutar con dulzura!" }
     ]
   },
   {
     "id": 7,
     "category": "Almuerzo",
-    "time": "35 min",
-    "title": "Tacos de Carne",
-    "calories": "520 kcal",
-    "imageName": "tacos_carne",
-    "description": "Tacos mexicanos con carne asada y pico de gallo.",
-    "stats": { "protein": "32g", "carbs": "40g", "fat": "24g" },
+    "time": "30 min",
+    "servings": "2 porciones",
+    "title": "Lomo Saltado Tradicional",
+    "calories": "620 kcal",
+    "imageName": "lomo_saltado",
+    "description": "El plato bandera de la fusión peruano-china. Trozos de res saltados al wok a fuego alto con cebolla, tomate y un toque de pisco para el flambeado.",
+    "stats": { "protein": "38g", "carbs": "55g", "fat": "26g" },
     "ingredients": [
-      { "id": 13, "title": "Tortillas", "description": "3 unidades" },
-      { "id": 14, "title": "Carne", "description": "200g de res" }
+      { "id": 1, "description": "350g de lomo de res en tiras gruesas." },
+      { "id": 2, "description": "1 cebolla roja y 2 tomates en gajos largos." },
+      { "id": 3, "description": "2 papas amarillas fritas en bastones." },
+      { "id": 4, "description": "Sillao, vinagre tinto, sal y culantro picado." }
     ],
     "steps": [
-      { "id": 13, "title": "Asar", "description": "Cocinar la carne." },
-      { "id": 14, "title": "Servir", "description": "Rellenar tortillas." }
+      { "id": 1, "description": "Sellar la carne al wok con aceite muy caliente; retirar y reservar." },
+      { "id": 2, "description": "Saltear cebolla y tomate; regresar la carne y añadir vinagre y sillao." },
+      { "id": 3, "description": "Mezclar con las papas fritas y añadir culantro fresco picado." },
+      { "id": 4, "description": "Sirve con arroz blanco bien graneado, ¡servir y disfrutar de un sabor único!" }
     ]
   },
   {
     "id": 8,
     "category": "Cena",
     "time": "25 min",
-    "title": "Salmón a la Plancha",
-    "calories": "450 kcal",
+    "servings": "1 porción",
+    "title": "Salmón con Espárragos al Limón",
+    "calories": "410 kcal",
     "imageName": "salmon_plancha",
-    "description": "Filete de salmón con espárragos y limón.",
-    "stats": { "protein": "35g", "carbs": "5g", "fat": "32g" },
+    "description": "Un plato ligero y sofisticado. El salmón se cocina para mantener su jugosidad, resaltado por espárragos tiernos y un toque cítrico.",
+    "stats": { "protein": "36g", "carbs": "8g", "fat": "28g" },
     "ingredients": [
-      { "id": 15, "title": "Salmón", "description": "1 filete" },
-      { "id": 16, "title": "Espárragos", "description": "100g" }
+      { "id": 1, "description": "1 filete de salmón fresco de 200g." },
+      { "id": 2, "description": "1 manojo de espárragos verdes tiernos." },
+      { "id": 3, "description": "1/2 limón (jugo y ralladura)." },
+      { "id": 4, "description": "Aceite de oliva, sal y eneldo fresco." }
     ],
     "steps": [
-      { "id": 15, "title": "Sellar", "description": "Cocinar piel abajo." },
-      { "id": 16, "title": "Acompañar", "description": "Saltear espárragos." }
+      { "id": 1, "description": "Cocinar el salmón a la plancha empezando por el lado de la piel." },
+      { "id": 2, "description": "Saltear los espárragos con ralladura de limón en la misma sartén." },
+      { "id": 3, "description": "Añadir un toque de mantequilla y jugo de limón al finalizar." },
+      { "id": 4, "description": "Emplata de forma minimalista y elegante, ¡servir y disfrutar de una cena saludable!" }
     ]
   },
   {
     "id": 9,
     "category": "Snack",
     "time": "5 min",
-    "title": "Smoothie de Bayas",
+    "servings": "1 porción",
+    "title": "Smoothie Antioxidante de Bayas",
     "calories": "210 kcal",
     "imageName": "smoothie_bayas",
-    "description": "Bebida refrescante de fresas, moras y leche.",
-    "stats": { "protein": "5g", "carbs": "35g", "fat": "3g" },
+    "description": "Una bebida vibrante cargada de vitaminas. Ideal como snack post-entrenamiento o merienda refrescante.",
+    "stats": { "protein": "6g", "carbs": "42g", "fat": "3g" },
     "ingredients": [
-      { "id": 17, "title": "Frutos rojos", "description": "1 taza" },
-      { "id": 18, "title": "Leche", "description": "200ml" }
+      { "id": 1, "description": "1 taza de frutos rojos (fresas, arándanos)." },
+      { "id": 2, "description": "1 taza de leche de coco o yogur griego." },
+      { "id": 3, "description": "1 cucharadita de chía y miel de agave." }
     ],
     "steps": [
-      { "id": 17, "title": "Licuar", "description": "Mezclar todo a alta velocidad." }
+      { "id": 1, "description": "Colocar todos los ingredientes en la licuadora." },
+      { "id": 2, "description": "Procesar a velocidad alta hasta que esté cremoso." },
+      { "id": 3, "description": "Decorar con unas hojas de menta o unas bayas enteras." },
+      { "id": 4, "description": "Vierte en un vaso alto bien frío, ¡servir y disfrutar de esta frescura!" }
     ]
   },
   {
     "id": 10,
     "category": "Almuerzo",
-    "time": "40 min",
-    "title": "Lasaña de Carne",
-    "calories": "750 kcal",
+    "time": "1 hora",
+    "servings": "4 porciones",
+    "title": "Lasaña Boloñesa Casera",
+    "calories": "740 kcal",
     "imageName": "lasaña_carne",
-    "description": "Capas de pasta, carne y salsa bechamel.",
-    "stats": { "protein": "40g", "carbs": "60g", "fat": "35g" },
+    "description": "Capas de pasta rellenas de una salsa boloñesa cocinada a fuego lento, bechamel sedosa y costra dorada de queso mozzarella.",
+    "stats": { "protein": "42g", "carbs": "65g", "fat": "36g" },
     "ingredients": [
-      { "id": 19, "title": "Pasta Lasaña", "description": "6 láminas" },
-      { "id": 20, "title": "Carne molida", "description": "250g" }
+      { "id": 1, "description": "12 láminas de pasta para lasaña." },
+      { "id": 2, "description": "500g de carne molida de res." },
+      { "id": 3, "description": "400ml de salsa bechamel y 400ml de pomodoro." },
+      { "id": 4, "description": "250g de queso mozzarella rallado." }
     ],
     "steps": [
-      { "id": 18, "title": "Salsa", "description": "Preparar bolognesa." },
-      { "id": 19, "title": "Hornear", "description": "Capa por capa y al horno." }
+      { "id": 1, "description": "Preparar la boloñesa reduciendo la carne con tomate por 30 minutos." },
+      { "id": 2, "description": "Armar las capas intercalando pasta, carne, bechamel y queso." },
+      { "id": 3, "description": "Hornear a 180°C durante 25 minutos hasta gratinar." },
+      { "id": 4, "description": "Corta porciones generosas y humeantes, ¡servir y disfrutar de un festín italiano!" }
     ]
   },
   {
     "id": 11,
-    "category": "Cena",
-    "time": "20 min",
-    "title": "Sopa de Tomate",
-    "calories": "180 kcal",
-    "imageName": "sopa_tomate",
-    "description": "Sopa caliente con albahaca y aceite de oliva.",
-    "stats": { "protein": "4g", "carbs": "22g", "fat": "9g" },
+    "category": "Almuerzo",
+    "time": "45 min",
+    "servings": "3 porciones",
+    "title": "Ají de Gallina",
+    "calories": "560 kcal",
+    "imageName": "aji_gallina",
+    "description": "Plato reconfortante peruano. Crema sedosa de ají amarillo, pan y nueces, servida con pollo deshilachado y papas cocidas.",
+    "stats": { "protein": "34g", "carbs": "48g", "fat": "26g" },
     "ingredients": [
-      { "id": 21, "title": "Tomates", "description": "4 maduros" },
-      { "id": 22, "title": "Albahaca", "description": "Hojas frescas" }
+      { "id": 1, "description": "1 pechuga de pollo cocida y deshilachada." },
+      { "id": 2, "description": "3 panes remojados en leche evaporada." },
+      { "id": 3, "description": "1/2 taza de pasta de ají amarillo." },
+      { "id": 4, "description": "Pecanas picadas, queso parmesano y papas." }
     ],
     "steps": [
-      { "id": 20, "title": "Cocer", "description": "Hervir tomates." },
-      { "id": 21, "title": "Licuar", "description": "Procesar y sazonar." }
+      { "id": 1, "description": "Licuar el pan remojado con las pecanas y un poco de caldo." },
+      { "id": 2, "description": "Hacer un aderezo de cebolla, ajo y ají; añadir el licuado y el pollo." },
+      { "id": 3, "description": "Cocinar removiendo hasta que la mezcla espese y tome brillo." },
+      { "id": 4, "description": "Acompaña con huevo duro y aceitunas, ¡servir y disfrutar de este clásico criollo!" }
     ]
   },
   {
     "id": 12,
-    "category": "Desayuno",
-    "time": "15 min",
-    "title": "Omelette de Champiñones",
-    "calories": "310 kcal",
-    "imageName": "omelette_champ",
-    "description": "Huevos batidos rellenos de champiñones y queso.",
-    "stats": { "protein": "18g", "carbs": "4g", "fat": "22g" },
+    "category": "Cena",
+    "time": "20 min",
+    "servings": "2 porciones",
+    "title": "Sopa de Tomate Rostizado",
+    "calories": "190 kcal",
+    "imageName": "sopa_tomate",
+    "description": "Sopa aterciopelada preparada con tomates asados al horno para concentrar su sabor, terminada con albahaca fresca.",
+    "stats": { "protein": "5g", "carbs": "24g", "fat": "9g" },
     "ingredients": [
-      { "id": 23, "title": "Huevos", "description": "2 unidades" },
-      { "id": 24, "title": "Champiñones", "description": "50g" }
+      { "id": 1, "description": "6 tomates maduros y 1 cebolla blanca." },
+      { "id": 2, "description": "2 dientes de ajo y 500ml de caldo de verduras." },
+      { "id": 3, "description": "Hojas de albahaca fresca y aceite de oliva." }
     ],
     "steps": [
-      { "id": 22, "title": "Saltear", "description": "Cocer champiñones." },
-      { "id": 23, "title": "Cocinar", "description": "Verter huevo y rellenar." }
+      { "id": 1, "description": "Rostizar tomates y ajos a 200°C; luego licuarlos con el caldo." },
+      { "id": 2, "description": "Hervir por 5 minutos y añadir sal, pimienta y albahaca picada." },
+      { "id": 3, "description": "Añadir un chorrito de crema de leche al servir si se desea." },
+      { "id": 4, "description": "Acompaña con un pan tostado crujiente, ¡servir y disfrutar con calidez!" }
     ]
   },
   {
     "id": 13,
-    "category": "Almuerzo",
-    "time": "30 min",
-    "title": "Hamburguesa Gourmet",
-    "calories": "680 kcal",
-    "imageName": "hamburguesa_gourmet",
-    "description": "Carne premium con cebolla caramelizada.",
-    "stats": { "protein": "35g", "carbs": "45g", "fat": "38g" },
+    "category": "Desayuno",
+    "time": "15 min",
+    "servings": "1 porción",
+    "title": "Omelette de Champiñones y Queso",
+    "calories": "310 kcal",
+    "imageName": "omelette_champ",
+    "description": "Una tortilla francesa clásica, doblada y rellena de champiñones salteados con mantequilla y queso fundido.",
+    "stats": { "protein": "18g", "carbs": "6g", "fat": "22g" },
     "ingredients": [
-      { "id": 25, "title": "Pan Brioche", "description": "1 unidad" },
-      { "id": 26, "title": "Carne Angus", "description": "200g" }
+      { "id": 1, "description": "2 huevos grandes de corral." },
+      { "id": 2, "description": "100g de champiñones laminados." },
+      { "id": 3, "description": "50g de queso mozzarella o suizo." },
+      { "id": 4, "description": "Perejil fresco picado y sal." }
     ],
     "steps": [
-      { "id": 24, "title": "Plancha", "description": "Cocinar carne al gusto." },
-      { "id": 25, "title": "Montar", "description": "Armar con vegetales." }
+      { "id": 1, "description": "Saltear los champiñones hasta que doren; batir los huevos con sal." },
+      { "id": 2, "description": "Verter el huevo en la sartén, añadir relleno y doblar por la mitad." },
+      { "id": 3, "description": "Cocinar un minuto más hasta que el queso se funda por completo." },
+      { "id": 4, "description": "Decora con perejil fresco por encima, ¡servir y disfrutar de este brunch!" }
     ]
   },
   {
     "id": 14,
-    "category": "Cena",
-    "time": "15 min",
-    "title": "Brochetas de Pollo",
-    "calories": "290 kcal",
-    "imageName": "brochetas_pollo",
-    "description": "Cubos de pollo con pimientos a la parrilla.",
-    "stats": { "protein": "32g", "carbs": "8g", "fat": "12g" },
+    "category": "Almuerzo",
+    "time": "35 min",
+    "servings": "1 porción",
+    "title": "Hamburguesa Angus Gourmet",
+    "calories": "720 kcal",
+    "imageName": "hamburguesa_gourmet",
+    "description": "Hamburguesa con carne premium de 200g, servida en pan brioche con cebollas caramelizadas y salsa secreta.",
+    "stats": { "protein": "40g", "carbs": "45g", "fat": "42g" },
     "ingredients": [
-      { "id": 27, "title": "Pollo", "description": "200g" },
-      { "id": 28, "title": "Pimientos", "description": "1 unidad" }
+      { "id": 1, "description": "200g de carne molida Angus." },
+      { "id": 2, "description": "1 pan brioche y 2 láminas de queso cheddar." },
+      { "id": 3, "description": "1 cebolla blanca y una pizca de azúcar." },
+      { "id": 4, "description": "Lechuga, tomate y mayonesa trufada." }
     ],
     "steps": [
-      { "id": 26, "title": "Pinchar", "description": "Armar las brochetas." },
-      { "id": 27, "title": "Parrilla", "description": "Cocinar 5 min por lado." }
+      { "id": 1, "description": "Caramelizar la cebolla a fuego lento; cocinar la carne al término deseado." },
+      { "id": 2, "description": "Derretir el queso sobre la carne y tostar el pan con mantequilla." },
+      { "id": 3, "description": "Armar con lechuga, tomate, la carne y la cebolla dulce." },
+      { "id": 4, "description": "Sujeta con un palillo de madera, ¡servir y disfrutar de esta experiencia jugosa!" }
     ]
   },
   {
     "id": 15,
-    "category": "Postre",
+    "category": "Cena",
     "time": "20 min",
-    "title": "Brownie de Chocolate",
-    "calories": "410 kcal",
-    "imageName": "brownie_choco",
-    "description": "Bizcocho denso de chocolate con nueces.",
-    "stats": { "protein": "5g", "carbs": "48g", "fat": "22g" },
+    "servings": "2 porciones",
+    "title": "Brochetas de Pollo y Pimientos",
+    "calories": "280 kcal",
+    "imageName": "brochetas_pollo",
+    "description": "Dados de pechuga marinados en limón y especias, ensartados con pimientos y asados a la parrilla.",
+    "stats": { "protein": "34g", "carbs": "10g", "fat": "8g" },
     "ingredients": [
-      { "id": 29, "title": "Cacao", "description": "50g" },
-      { "id": 30, "title": "Azúcar", "description": "100g" }
+      { "id": 1, "description": "300g de pechuga de pollo en cubos." },
+      { "id": 2, "description": "1 pimiento rojo y 1 cebolla morada." },
+      { "id": 3, "description": "Jugo de limón, orégano y pimentón." }
     ],
     "steps": [
-      { "id": 28, "title": "Mezclar", "description": "Unir ingredientes secos." },
-      { "id": 29, "title": "Hornear", "description": "Cocer por 15 min." }
+      { "id": 1, "description": "Marinar el pollo; ensartar en palitos alternando con vegetales." },
+      { "id": 2, "description": "Cocinar a fuego alto en plancha o parrilla por 8 minutos." },
+      { "id": 3, "description": "Pincelar con el resto de la marinada durante la cocción." },
+      { "id": 4, "description": "Coloca sobre una base de ensalada verde, ¡servir y disfrutar de un sabor ahumado!" }
     ]
   },
   {
     "id": 16,
-    "category": "Almuerzo",
-    "time": "45 min",
-    "title": "Risotto de Hongos",
-    "calories": "530 kcal",
-    "imageName": "risotto_hongos",
-    "description": "Arroz cremoso con variedad de hongos silvestres.",
-    "stats": { "protein": "12g", "carbs": "65g", "fat": "25g" },
+    "category": "Postre",
+    "time": "40 min",
+    "servings": "6 porciones",
+    "title": "Brownie de Chocolate y Nueces",
+    "calories": "390 kcal",
+    "imageName": "brownie_choco",
+    "description": "Bizcocho denso y húmedo con intenso sabor a cacao oscuro y el crujiente toque de las nueces de Castilla.",
+    "stats": { "protein": "6g", "carbs": "45g", "fat": "24g" },
     "ingredients": [
-      { "id": 31, "title": "Arroz Arborio", "description": "150g" },
-      { "id": 32, "title": "Champiñones", "description": "100g" }
+      { "id": 1, "description": "150g de chocolate amargo y 100g de mantequilla." },
+      { "id": 2, "description": "2 huevos, 150g de azúcar y 80g de harina." },
+      { "id": 3, "description": "50g de nueces troceadas." }
     ],
     "steps": [
-      { "id": 30, "title": "Guisar", "description": "Agregar caldo poco a poco." },
-      { "id": 31, "title": "Mantecar", "description": "Añadir queso y mantequilla." }
+      { "id": 1, "description": "Derretir chocolate con mantequilla; mezclar con huevos y azúcar." },
+      { "id": 2, "description": "Incorporar harina y nueces; hornear a 175°C por 20 minutos." },
+      { "id": 3, "description": "Dejar enfriar totalmente para que la textura se asiente." },
+      { "id": 4, "description": "Espolvorea azúcar glass, ¡servir y disfrutar de este pecado de chocolate!" }
     ]
   },
   {
     "id": 17,
-    "category": "Desayuno",
-    "time": "10 min",
-    "title": "Bowl de Acai",
-    "calories": "320 kcal",
-    "imageName": "bowl_acai",
-    "description": "Base de acai con granola y frutas frescas.",
-    "stats": { "protein": "6g", "carbs": "55g", "fat": "10g" },
+    "category": "Almuerzo",
+    "time": "40 min",
+    "servings": "2 porciones",
+    "title": "Risotto de Hongos Silvestres",
+    "calories": "510 kcal",
+    "imageName": "risotto_hongos",
+    "description": "Arroz Arborio cocinado lentamente con caldo caliente, creando una textura cremosa natural con hongos frescos.",
+    "stats": { "protein": "12g", "carbs": "68g", "fat": "22g" },
     "ingredients": [
-      { "id": 33, "title": "Acai", "description": "100g pulpa" },
-      { "id": 34, "title": "Granola", "description": "30g" }
+      { "id": 1, "description": "200g de arroz Arborio." },
+      { "id": 2, "description": "150g de champiñones y setas mixtas." },
+      { "id": 3, "description": "1 litro de caldo caliente y 50ml de vino blanco." },
+      { "id": 4, "description": "Queso parmesano y mantequilla fría." }
     ],
     "steps": [
-      { "id": 32, "title": "Mezclar", "description": "Licuar acai con banano." },
-      { "id": 33, "title": "Decorar", "description": "Poner toppings arriba." }
+      { "id": 1, "description": "Nacarar el arroz con cebolla; añadir vino y luego el caldo poco a poco." },
+      { "id": 2, "description": "Remover constantemente para liberar el almidón hasta que esté cremoso." },
+      { "id": 3, "description": "Mantecar con el queso y la mantequilla fuera del fuego." },
+      { "id": 4, "description": "Termina con un chorrito de aceite de trufa, ¡servir y disfrutar con elegancia!" }
     ]
   },
   {
     "id": 18,
-    "category": "Cena",
-    "time": "30 min",
-    "title": "Pizza Vegana",
-    "calories": "460 kcal",
-    "imageName": "pizza_vegana",
-    "description": "Masa delgada con vegetales y queso vegano.",
-    "stats": { "protein": "10g", "carbs": "70g", "fat": "14g" },
+    "category": "Desayuno",
+    "time": "10 min",
+    "servings": "1 porción",
+    "title": "Bowl de Acai Energético",
+    "calories": "350 kcal",
+    "imageName": "bowl_acai",
+    "description": "Base helada de pulpa de acai y plátano, servida con toppings variados para un desayuno rico en antioxidantes.",
+    "stats": { "protein": "8g", "carbs": "55g", "fat": "12g" },
     "ingredients": [
-      { "id": 35, "title": "Masa", "description": "1 unidad" },
-      { "id": 36, "title": "Vegetales", "description": "Varios" }
+      { "id": 1, "description": "100g de pulpa de acai y 1 plátano congelado." },
+      { "id": 2, "description": "Toppings: granola, arándanos y coco rallado." },
+      { "id": 3, "description": "Semillas de chía o cáñamo." }
     ],
     "steps": [
-      { "id": 34, "title": "Armar", "description": "Poner salsa y vegetales." },
-      { "id": 35, "title": "Hornear", "description": "Cocinar a 200°C." }
+      { "id": 1, "description": "Licuar el acai y plátano con un mínimo de agua hasta espesar." },
+      { "id": 2, "description": "Verter en un bowl y alisar la superficie." },
+      { "id": 3, "description": "Colocar los toppings de forma decorativa por secciones." },
+      { "id": 4, "description": "Usa una cuchara de madera para la foto, ¡servir y disfrutar de pura energía!" }
     ]
   },
   {
     "id": 19,
-    "category": "Snack",
-    "time": "15 min",
-    "title": "Hummus con Zanahoria",
-    "calories": "240 kcal",
-    "imageName": "hummus_zanahoria",
-    "description": "Crema de garbanzos con bastones de zanahoria.",
-    "stats": { "protein": "8g", "carbs": "28g", "fat": "12g" },
+    "category": "Cena",
+    "time": "30 min",
+    "servings": "2 porciones",
+    "title": "Pizza Vegana de Vegetales",
+    "calories": "460 kcal",
+    "imageName": "pizza_vegana",
+    "description": "Masa delgada artesanal con salsa pomodoro, queso vegano y una selección de vegetales mediterráneos asados.",
+    "stats": { "protein": "12g", "carbs": "75g", "fat": "14g" },
     "ingredients": [
-      { "id": 37, "title": "Garbanzos", "description": "200g cocidos" },
-      { "id": 38, "title": "Zanahoria", "description": "2 unidades" }
+      { "id": 1, "description": "1 base de pizza artesanal." },
+      { "id": 2, "description": "Mix de zucchini, pimiento y cebolla morada." },
+      { "id": 3, "description": "80g de mozzarella vegana y salsa de tomate." }
     ],
     "steps": [
-      { "id": 36, "title": "Procesar", "description": "Licuar garbanzos y tahini." }
+      { "id": 1, "description": "Asar los vegetales; extender la salsa sobre la masa de pizza." },
+      { "id": 2, "description": "Añadir el queso y los vegetales; hornear a 250°C por 12 minutos." },
+      { "id": 3, "description": "Añadir orégano seco y unas gotas de aceite de oliva al salir." },
+      { "id": 4, "description": "Corta en triángulos perfectos, ¡servir y disfrutar de este sabor natural!" }
     ]
   },
   {
     "id": 20,
-    "category": "Almuerzo",
-    "time": "25 min",
-    "title": "Pollo al Curry",
-    "calories": "490 kcal",
-    "imageName": "pollo_curry",
-    "description": "Pollo en salsa de coco y curry amarillo.",
-    "stats": { "protein": "34g", "carbs": "12g", "fat": "30g" },
+    "category": "Snack",
+    "time": "15 min",
+    "servings": "2 porciones",
+    "title": "Hummus Clásico con Crudités",
+    "calories": "240 kcal",
+    "imageName": "hummus_zanahoria",
+    "description": "Crema de garbanzos suave con tahini y limón, servida con bastones de vegetales frescos.",
+    "stats": { "protein": "10g", "carbs": "30g", "fat": "12g" },
     "ingredients": [
-      { "id": 39, "title": "Pollo", "description": "200g" },
-      { "id": 40, "title": "Leche de coco", "description": "150ml" }
+      { "id": 1, "description": "250g de garbanzos cocidos." },
+      { "id": 2, "description": "2 cucharadas de tahini y jugo de 1 limón." },
+      { "id": 3, "description": "Zanahoria y pepino en bastones largos." }
     ],
     "steps": [
-      { "id": 37, "title": "Saltear", "description": "Cocinar pollo con curry." },
-      { "id": 38, "title": "Hervir", "description": "Añadir leche y reducir." }
+      { "id": 1, "description": "Procesar garbanzos con tahini, ajo, limón y sal." },
+      { "id": 2, "description": "Ajustar la cremosidad con un chorrito de agua fría." },
+      { "id": 3, "description": "Servir con un chorrito de aceite de oliva y pimentón dulce." },
+      { "id": 4, "description": "Organiza los vegetales alrededor del dip, ¡servir y disfrutar de un snack sano!" }
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Almuerzo",
+    "time": "25 min",
+    "servings": "2 porciones",
+    "title": "Ceviche de Pescado Peruano",
+    "calories": "250 kcal",
+    "imageName": "ceviche_pescado",
+    "description": "Pescado blanco fresco marinado en jugo de limón, ají limo y cilantro. Servido con camote y choclo.",
+    "stats": { "protein": "40g", "carbs": "15g", "fat": "4g" },
+    "ingredients": [
+      { "id": 1, "description": "500g de filete de pescado fresco (corvina o lenguado)." },
+      { "id": 2, "description": "10 limones exprimidos y 1 ají limo picado." },
+      { "id": 3, "description": "Cebolla roja en pluma, camote y choclo cocido." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Sazonar el pescado con sal; añadir ají y cilantro." },
+      { "id": 2, "description": "Verter el limón y mezclar por un minuto hasta que el pescado blanquee." },
+      { "id": 3, "description": "Añadir la cebolla roja y rectificar la sal." },
+      { "id": 4, "description": "Emplata en un plato hondo bien frío, ¡servir y disfrutar del frescor del mar!" }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Entrada",
+    "time": "35 min",
+    "servings": "3 porciones",
+    "title": "Causa Limeña de Pollo",
+    "calories": "410 kcal",
+    "imageName": "causa_limena",
+    "description": "Masa de papa amarilla amasada con ají amarillo y limón, rellena de ensalada de pollo y aguacate.",
+    "stats": { "protein": "22g", "carbs": "45g", "fat": "18g" },
+    "ingredients": [
+      { "id": 1, "description": "600g de papa amarilla prensada." },
+      { "id": 2, "description": "3 cucharadas de pasta de ají amarillo." },
+      { "id": 3, "description": "150g de pollo deshilachado con mayonesa." },
+      { "id": 4, "description": "1 aguacate maduro en láminas." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Amasar la papa con ají, limón y sal; dividir en dos porciones." },
+      { "id": 2, "description": "Colocar una capa de papa, luego aguacate y el pollo con mayonesa." },
+      { "id": 3, "description": "Cubrir con otra capa de papa y decorar con huevo duro." },
+      { "id": 4, "description": "Sirve como una pequeña torre artística, ¡servir y disfrutar de esta joya limeña!" }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Almuerzo",
+    "time": "1 hora",
+    "servings": "3 porciones",
+    "title": "Seco de Res con Frijoles",
+    "calories": "680 kcal",
+    "imageName": "seco_res",
+    "description": "Guiso de carne en salsa de culantro y chicha de jora, acompañado de frijoles cremosos y arroz.",
+    "stats": { "protein": "45g", "carbs": "70g", "fat": "25g" },
+    "ingredients": [
+      { "id": 1, "description": "500g de carne de res para guiso." },
+      { "id": 2, "description": "1 taza de culantro licuado y 1/2 taza de chicha de jora." },
+      { "id": 3, "description": "300g de frijoles canario cocidos." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Sellar la carne; hacer un aderezo de cebolla, ajo y culantro." },
+      { "id": 2, "description": "Añadir la chicha y cocinar a fuego lento por 50 minutos." },
+      { "id": 3, "description": "Rectificar el guiso con arvejas y zanahorias al final." },
+      { "id": 4, "description": "Monta el plato con arroz blanco al lado, ¡servir y disfrutar de un sabor potente!" }
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Cena",
+    "time": "25 min",
+    "servings": "2 porciones",
+    "title": "Papa a la Huancaína",
+    "calories": "350 kcal",
+    "imageName": "papa_huancaina",
+    "description": "Entrada peruana de papas bañadas en una crema sedosa de ají amarillo, queso fresco y galletas.",
+    "stats": { "protein": "12g", "carbs": "40g", "fat": "18g" },
+    "ingredients": [
+      { "id": 1, "description": "4 papas blancas sancochadas." },
+      { "id": 2, "description": "150g de queso fresco y 4 ajíes amarillos." },
+      { "id": 3, "description": "1/2 taza de leche evaporada y 4 galletas de soda." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Licuar ajíes, queso, leche y galletas hasta obtener una crema lisa." },
+      { "id": 2, "description": "Cortar las papas en rodajas y disponerlas sobre lechuga." },
+      { "id": 3, "description": "Bañar generosamente con la crema huancaína." },
+      { "id": 4, "description": "Finaliza con una aceituna negra y medio huevo, ¡servir y disfrutar con gusto!" }
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Almuerzo",
+    "time": "30 min",
+    "servings": "2 porciones",
+    "title": "Tallarines Verdes con Bistec",
+    "calories": "710 kcal",
+    "imageName": "tallarines_verdes",
+    "description": "Pasta en salsa de espinaca y albahaca peruana, acompañada de un bistec de res a la plancha.",
+    "stats": { "protein": "40g", "carbs": "75g", "fat": "28g" },
+    "ingredients": [
+      { "id": 1, "description": "250g de tallarín grueso." },
+      { "id": 2, "description": "2 tazas de espinaca y 1 de albahaca fresca." },
+      { "id": 3, "description": "150g de queso fresco y 2 bistecs de res." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Blanquear hojas; licuar con queso, leche y nueces." },
+      { "id": 2, "description": "Mezclar la salsa verde con la pasta caliente." },
+      { "id": 3, "description": "Freír el bistec sazonado con sal, pimienta y comino." },
+      { "id": 4, "description": "Coloca el bistec sobre los fideos bien verdes, ¡servir y disfrutar de este manjar!" }
+    ]
+  },
+  {
+    "id": 26,
+    "category": "Desayuno",
+    "time": "20 min",
+    "servings": "2 porciones",
+    "title": "Huevos Rancheros Gourmet",
+    "calories": "420 kcal",
+    "imageName": "huevos_rancheros",
+    "description": "Huevos estrellados sobre tortillas de maíz, bañados en salsa roja picante y acompañados de frijoles.",
+    "stats": { "protein": "18g", "carbs": "35g", "fat": "24g" },
+    "ingredients": [
+      { "id": 1, "description": "4 tortillas de maíz y 4 huevos." },
+      { "id": 2, "description": "1 taza de salsa de tomate picante y frijoles negros." },
+      { "id": 3, "description": "Queso fresco y cilantro para decorar." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Dorar tortillas; calentar frijoles y extender sobre ellas." },
+      { "id": 2, "description": "Freír los huevos y colocarlos encima; bañar con salsa caliente." },
+      { "id": 3, "description": "Añadir aguacate en cubos y cilantro picado." },
+      { "id": 4, "description": "Lleva el sabor de México a tu mesa, ¡servir y disfrutar de este gran desayuno!" }
+    ]
+  },
+  {
+    "id": 27,
+    "category": "Postre",
+    "time": "25 min",
+    "servings": "4 porciones",
+    "title": "Suspiro a la Limeña",
+    "calories": "520 kcal",
+    "imageName": "suspiro_limena",
+    "description": "Manjar blanco cremoso de yemas coronado con un merengue ligero al oporto y canela.",
+    "stats": { "protein": "7g", "carbs": "85g", "fat": "15g" },
+    "ingredients": [
+      { "id": 1, "description": "1 lata de leche condensada y 1 de evaporada." },
+      { "id": 2, "description": "5 yemas de huevo y 2 claras para el merengue." },
+      { "id": 3, "description": "1/4 taza de vino oporto y canela." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Reducir leches hasta espesar; añadir yemas fuera del fuego." },
+      { "id": 2, "description": "Hacer un almíbar de oporto y batir con claras para el merengue." },
+      { "id": 3, "description": "Servir en copas el manjar y decorar con el merengue." },
+      { "id": 4, "description": "Espolvorea un poco de canela en polvo, ¡servir y disfrutar de este suspiro!" }
+    ]
+  },
+  {
+    "id": 28,
+    "category": "Almuerzo",
+    "time": "40 min",
+    "servings": "2 porciones",
+    "title": "Arroz Chaufa de Pollo",
+    "calories": "610 kcal",
+    "imageName": "arroz_chaufa",
+    "description": "Arroz saltado al wok con pollo, tortilla de huevo y cebollita china al estilo chifa peruano.",
+    "stats": { "protein": "35g", "carbs": "80g", "fat": "20g" },
+    "ingredients": [
+      { "id": 1, "description": "3 tazas de arroz blanco cocido frío." },
+      { "id": 2, "description": "250g de pechuga de pollo y 3 huevos." },
+      { "id": 3, "description": "Sillao, aceite de sésamo y cebollita china." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Preparar tortilla de huevo; saltar pollo en wok caliente." },
+      { "id": 2, "description": "Añadir arroz, sillao y aceite de sésamo; saltar enérgicamente." },
+      { "id": 3, "description": "Incorporar la cebollita china y la tortilla al final." },
+      { "id": 4, "description": "Emplata en un bowl grande humeante, ¡servir y disfrutar de esta fusión!" }
+    ]
+  },
+  {
+    "id": 29,
+    "category": "Snack",
+    "time": "10 min",
+    "servings": "2 porciones",
+    "title": "Guacamole con Totopos",
+    "calories": "310 kcal",
+    "imageName": "guacamole_totopos",
+    "description": "Crema rústica de aguacate con tomate y cebolla, servida con tortillas de maíz crujientes.",
+    "stats": { "protein": "4g", "carbs": "28g", "fat": "22g" },
+    "ingredients": [
+      { "id": 1, "description": "2 aguacates maduros grandes." },
+      { "id": 2, "description": "1/2 tomate, 1/4 cebolla y cilantro." },
+      { "id": 3, "description": "1 bolsa de totopos de maíz." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Machacar aguacate; mezclar con vegetales picados y limón." },
+      { "id": 2, "description": "Rectificar sal y añadir un toque de chile si se desea." },
+      { "id": 3, "description": "Colocar el hueso del aguacate al centro para evitar que se oxide." },
+      { "id": 4, "description": "Acompaña con totopos bien crujientes, ¡servir y disfrutar de un gran dip!" }
+    ]
+  },
+  {
+    "id": 30,
+    "category": "Cena",
+    "time": "20 min",
+    "servings": "2 porciones",
+    "title": "Quesadillas de Flor de Calabaza",
+    "calories": "340 kcal",
+    "imageName": "quesadillas_calabaza",
+    "description": "Tortillas de maíz con queso Oaxaca fundido y flores de calabaza frescas salteadas.",
+    "stats": { "protein": "15g", "carbs": "25g", "fat": "18g" },
+    "ingredients": [
+      { "id": 1, "description": "4 tortillas de maíz fresco." },
+      { "id": 2, "description": "1 taza de flores de calabaza limpias." },
+      { "id": 3, "description": "150g de queso Oaxaca o mozzarella." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Saltear flores con ajo; calentar tortillas en comal." },
+      { "id": 2, "description": "Poner queso y flores; doblar y calentar hasta fundir." },
+      { "id": 3, "description": "Cortar por la mitad para facilitar el consumo." },
+      { "id": 4, "description": "Sirve con salsa verde tatemada, ¡servir y disfrutar de esta cena ligera!" }
+    ]
+  },
+  {
+    "id": 31,
+    "category": "Almuerzo",
+    "time": "45 min",
+    "servings": "2 porciones",
+    "title": "Tacu Tacu con Lomo",
+    "calories": "750 kcal",
+    "imageName": "tacu_tacu",
+    "description": "Mezcla frita de arroz y frijoles del día anterior, servida con una sábana de lomo de res.",
+    "stats": { "protein": "42g", "carbs": "85g", "fat": "30g" },
+    "ingredients": [
+      { "id": 1, "description": "2 tazas de mezcla de arroz y frijoles." },
+      { "id": 2, "description": "2 filetes de lomo de res delgados." },
+      { "id": 3, "description": "Pasta de ají amarillo y cebolla picada." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Dorar la mezcla de arroz y frijoles en sartén hasta formar una costra." },
+      { "id": 2, "description": "Freír el lomo sazonado con sal y pimienta a fuego alto." },
+      { "id": 3, "description": "Darle forma ovalada al tacu tacu antes de emplatar." },
+      { "id": 4, "description": "Corona con un huevo frito si te sientes atrevido, ¡servir y disfrutar de este clásico!" }
+    ]
+  },
+  {
+    "id": 32,
+    "category": "Entrada",
+    "time": "40 min",
+    "servings": "3 porciones",
+    "title": "Anticuchos de Corazón",
+    "calories": "380 kcal",
+    "imageName": "anticuchos_peru",
+    "description": "Brochetas de corazón de res marinadas en ají panca y especias, asadas a la parrilla.",
+    "stats": { "protein": "45g", "carbs": "10g", "fat": "18g" },
+    "ingredients": [
+      { "id": 1, "description": "500g de corazón de res limpio en trozos." },
+      { "id": 2, "description": "1/2 taza de pasta de ají panca y vinagre tinto." },
+      { "id": 3, "description": "Ajo molido, comino y orégano seco." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Marinar la carne por 4 horas; ensartar en palitos." },
+      { "id": 2, "description": "Asar a la parrilla bañando con la marinada y aceite." },
+      { "id": 3, "description": "Cocinar hasta que estén bien dorados pero jugosos por dentro." },
+      { "id": 4, "description": "Acompaña con papa dorada y choclo, ¡servir y disfrutar de la tradición!" }
+    ]
+  },
+  {
+    "id": 33,
+    "category": "Postre",
+    "time": "45 min",
+    "servings": "4 porciones",
+    "title": "Arroz con Leche Peruano",
+    "calories": "320 kcal",
+    "imageName": "arroz_leche",
+    "description": "Arroz cocido con especias, leche condensada y evaporada, con una textura muy cremosa.",
+    "stats": { "protein": "8g", "carbs": "60g", "fat": "10g" },
+    "ingredients": [
+      { "id": 1, "description": "1 taza de arroz blanco y 2 tazas de agua." },
+      { "id": 2, "description": "1 rama de canela y 3 clavos de olor." },
+      { "id": 3, "description": "1 lata de leche evaporada y 1/2 de condensada." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Cocinar arroz con canela hasta que el agua evapore." },
+      { "id": 2, "description": "Añadir leches y cocinar a fuego bajo removiendo siempre." },
+      { "id": 3, "description": "Añadir pasas y esencia de vainilla al final." },
+      { "id": 4, "description": "Sirve en dulceras individuales, ¡servir y disfrutar de este postre casero!" }
+    ]
+  },
+  {
+    "id": 34,
+    "category": "Postre",
+    "time": "40 min",
+    "servings": "4 porciones",
+    "title": "Mazamorra Morada",
+    "calories": "210 kcal",
+    "imageName": "mazamorra_morada",
+    "description": "Postre típico a base de maíz morado, frutas secas y harina de camote.",
+    "stats": { "protein": "1g", "carbs": "50g", "fat": "0g" },
+    "ingredients": [
+      { "id": 1, "description": "1 litro de chicha morada concentrada." },
+      { "id": 2, "description": "100g de harina de camote (chuño)." },
+      { "id": 3, "description": "Piña, membrillo y frutas secas picadas." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Hervir chicha con frutas; disolver harina en agua fría." },
+      { "id": 2, "description": "Añadir harina a la olla hirviendo sin dejar de mover." },
+      { "id": 3, "description": "Cocinar hasta que espese y se vuelva brillante." },
+      { "id": 4, "description": "Combina con arroz con leche (clásico combinado), ¡servir y disfrutar!" }
+    ]
+  },
+  {
+    "id": 35,
+    "category": "Almuerzo",
+    "time": "50 min",
+    "servings": "3 porciones",
+    "title": "Escabeche de Pollo",
+    "calories": "520 kcal",
+    "imageName": "escabeche_pollo",
+    "description": "Pollo frito sumergido en un escabeche de cebollas, ají amarillo y vinagre.",
+    "stats": { "protein": "38g", "carbs": "30g", "fat": "25g" },
+    "ingredients": [
+      { "id": 1, "description": "3 presas de pollo grandes." },
+      { "id": 2, "description": "3 cebollas rojas en trozos grandes." },
+      { "id": 3, "description": "1/2 taza de vinagre y pasta de ají panca." }
+    ],
+    "steps": [
+      { "id": 1, "description": "Freír el pollo harinado; preparar el escabeche con cebolla y vinagre." },
+      { "id": 2, "description": "Mezclar el pollo con las cebollas y dejar reposar 15 minutos." },
+      { "id": 3, "description": "Decorar con huevo duro y aceituna negra al plato." },
+      { "id": 4, "description": "Sirve frío o tibio según tu preferencia, ¡servir y disfrutar de este gran plato!" }
     ]
   }
 ]

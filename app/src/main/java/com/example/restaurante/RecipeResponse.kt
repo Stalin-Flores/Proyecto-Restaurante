@@ -6,6 +6,7 @@ data class RecipeResponse(
     val id: Int,
     val category: String,
     val time: String,
+    val servings: String,
     val title: String,
     val calories: String,
     val imageName: String, // Cambiado de Int a String para usar nombres de recursos
@@ -23,13 +24,11 @@ data class RecipeStatsResponse(
 
 data class StepPreparationResponse(
     val id: Int,
-    val title: String,
     val description: String,
 ): Serializable
 
 data class IngredientesResponse(
     val id: Int,
-    val title: String,
     val description: String,
 ): Serializable
 

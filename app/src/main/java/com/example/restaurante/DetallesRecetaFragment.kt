@@ -18,7 +18,7 @@ class DetallesRecetaFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentDetallesRecetaBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -30,6 +30,8 @@ class DetallesRecetaFragment : Fragment() {
 
         binding.apply {
             textrecipeTitle.text = recipe.title
+//            tvServingsDetail.text = getString(R.string.recipe_servings, recipe.servings)
+            tvServingsDetail.text = recipe.servings
             textrecipeDescription.text = recipe.description
             tvCaloriesDetail.text = recipe.calories
             

@@ -36,6 +36,8 @@ class RecipeAdapter(
             time.text = recipe.time
             recipetitle.text = recipe.title
             calorie.text = recipe.calories
+//            tvServings.text = context.getString(R.string.recipe_servings, recipe.servings)
+            tvServings.text = recipe.servings
             
             // Obtener el ID del recurso dinámicamente usando el nombre
             val imageResId = context.resources.getIdentifier(

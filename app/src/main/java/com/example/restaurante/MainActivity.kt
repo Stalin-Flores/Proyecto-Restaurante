@@ -70,6 +70,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Maneja los estilos de los iconos de navegación
     private fun updateNavVisuals(destinationId: Int) {
         val navIconos = listOf(
             binding.recipeFragment,
