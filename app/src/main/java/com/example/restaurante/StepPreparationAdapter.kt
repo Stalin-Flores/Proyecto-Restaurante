@@ -7,10 +7,11 @@ import com.example.restaurante.databinding.ItemStepPreparationLayoutBinding
 
 class StepPreparationAdapter(private val listStepsPreparation: List<StepPreparationResponse>): RecyclerView.Adapter<ItemStepPreparationViewHolder>() {
 
+    //Tamaño de la lista(cantidad de elementos)
     override fun getItemCount(): Int {
         return listStepsPreparation.size
     }
-    
+    //Se encarga de inflar el fragment
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -22,7 +23,7 @@ class StepPreparationAdapter(private val listStepsPreparation: List<StepPreparat
         )
         return ItemStepPreparationViewHolder(binding)
     }
-
+    // Carga de datos las celdas
     override fun onBindViewHolder(
         holder: ItemStepPreparationViewHolder,
         position: Int

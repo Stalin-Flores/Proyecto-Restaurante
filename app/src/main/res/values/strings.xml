@@ -3,6 +3,11 @@
     <!-- ==================== APP GENERAL ==================== -->
     <string name="app_name">RESTAURANTE</string>
 
+    <!-- ==================== NAVEGACIÓN ==================== -->
+    <string name="nav_home">Home</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_profile">Perfil</string>
+
     <!-- ==================== PANTALLA DE LOGIN ==================== -->
     <string name="bienvenido">Bienvenido</string>
     <string name="email_label">Email</string>

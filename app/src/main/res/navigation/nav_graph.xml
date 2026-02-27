@@ -37,4 +37,14 @@
             android:name="recipe"
             app:argType="com.example.restaurante.RecipeResponse" />
     </fragment>
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.restaurante.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.restaurante.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
 </navigation>
