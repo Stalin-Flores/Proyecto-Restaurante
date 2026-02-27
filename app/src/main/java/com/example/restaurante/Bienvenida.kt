@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -92,19 +93,17 @@ class Bienvenida : Fragment() {
                 if (task.isSuccessful) {
                     // Login exitoso
                     val user = auth.currentUser
+
+                    // Cambia de fragment bienvenida a recipeFragment pasando el argumento del correo
+                    val email = user?.email
+                    val action = BienvenidaDirections.actionBienvenidaToRecipeFragment(email)
+                    findNavController().navigate(action)
+
                     Toast.makeText(
                         requireContext(),
-                        "Login exitoso. Bienvenido ${user?.email}",
+                        "Login exitoso. Bienvenido ${email}",
                         Toast.LENGTH_SHORT
                     ).show()
-
-                    // Remover el fragment de Bienvenida para mostrar el activity_main
-                    parentFragmentManager.beginTransaction()
-                        .remove(this)
-                        .commit()
-
-                    // Llamar a la función del MainActivity para actualizar el TextView
-                    (activity as? MainActivity)?.mostrarPantallaInicio(user?.email)
 
                 } else {
                     // Error en el login
@@ -117,5 +116,6 @@ class Bienvenida : Fragment() {
                 }
             }
     }
+
 }
 
