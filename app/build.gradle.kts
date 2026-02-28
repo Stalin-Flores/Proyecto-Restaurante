@@ -1,3 +1,5 @@
+//import androidx.glance.appwidget.compose
+
 plugins {
     alias(libs.plugins.android.application)
     id("com.google.gms.google-services")
@@ -60,4 +62,5 @@ dependencies {
     implementation(libs.okhttp.logging)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.coil.compose)
 }

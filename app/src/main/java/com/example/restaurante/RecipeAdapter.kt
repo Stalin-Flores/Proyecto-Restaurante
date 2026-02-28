@@ -37,21 +37,10 @@ class RecipeAdapter(
             recipetitle.text = recipe.title
             calorie.text = recipe.calories
             tvServings.text = recipe.servings
-            
-            // Obtener el ID del recurso dinámicamente usando el nombre
-            val imageResId = context.resources.getIdentifier(
-                recipe.imageName,
-                "drawable",
-                context.packageName
-            )
-            
-            if (imageResId != 0) {
-                imgrecipe.setImageResource(imageResId)
-            } else {
-                // Imagen por defecto si no se encuentra
-                imgrecipe.setImageResource(android.R.drawable.ic_menu_report_image)
-            }
-            
+
+            //Maneja las img del card
+            imageRecipe.loadRecipeImage(recipe.imageName)
+
             root.setOnClickListener {
                 onItemClick(recipe)
             }

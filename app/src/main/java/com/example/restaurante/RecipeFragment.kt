@@ -32,7 +32,6 @@ class RecipeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //pasa datos del email a la vista
         // Pasa datos del email a la vista
         val emailRecibido = args.userEmail
         binding.tvGreeting.text = "Hola Bienvenido\n$emailRecibido"
@@ -49,7 +48,6 @@ class RecipeFragment : Fragment() {
             adapter = recipeAdapter
         }
 
-        // Cargar las recetas desde la API
         loadRecipesFromServiceAPI()
     }
 
@@ -60,8 +58,6 @@ class RecipeFragment : Fragment() {
                 val recipes = withContext(Dispatchers.IO) {
                     RetrofitRecipeClient.apiService.getRecipes()
                 }
-
-                // Actualizar la lista de recetas en el adaptador en el hilo principal
                 if (recipes.isNotEmpty()) {
                     recipeAdapter.updateRecipes(recipes)
                     Snackbar.make(binding.root, "Se cargaron ${recipes.size} recetas", Snackbar.LENGTH_LONG)
@@ -70,14 +66,12 @@ class RecipeFragment : Fragment() {
                     Snackbar.make(binding.root, "No se encontraron recetas", Snackbar.LENGTH_SHORT).show()
                 }
             } catch (e: Exception) {
-                // Manejo de errores
                 Snackbar.make(binding.root, "Error al conectar con el servidor: ${e.message}", Snackbar.LENGTH_LONG)
                     .setAction("REINTENTAR") { loadRecipesFromServiceAPI() }
                     .show()
             }
         }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

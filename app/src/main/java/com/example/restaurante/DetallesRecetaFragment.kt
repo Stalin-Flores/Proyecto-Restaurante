@@ -30,7 +30,6 @@ class DetallesRecetaFragment : Fragment() {
 
         binding.apply {
             textrecipeTitle.text = recipe.title
-//            tvServingsDetail.text = getString(R.string.recipe_servings, recipe.servings)
             tvServingsDetail.text = recipe.servings
             textrecipeDescription.text = recipe.description
             tvCaloriesDetail.text = recipe.calories
@@ -40,15 +39,8 @@ class DetallesRecetaFragment : Fragment() {
             tvCarbs.text = recipe.stats.carbs
             tvFat.text = recipe.stats.fat
 
-            // Imagen dinámica
-            val imageResId = requireContext().resources.getIdentifier(
-                recipe.imageName,
-                "drawable",
-                requireContext().packageName
-            )
-            if (imageResId != 0) {
-                imgRecipeDetail.setImageResource(imageResId)
-            }
+            // Carga la imagen usando la misma lógica que el adaptador
+            imgRecipeDetail.loadRecipeImage(recipe.imageName)
 
             rvIngredients.apply {
                 layoutManager = LinearLayoutManager(requireContext())

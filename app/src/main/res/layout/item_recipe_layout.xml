@@ -26,10 +26,11 @@
                 android:layout_height="160dp">
 
                 <ImageView
+                    android:id="@+id/imageRecipe"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/comida1" />
+                    android:src="@drawable/pasta_alfredo" />
 
                 <!-- Rating Badge -->
                 <TextView
@@ -105,7 +106,6 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/imgrecipe"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_alignParentEnd="true"
