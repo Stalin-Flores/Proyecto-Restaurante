@@ -9,9 +9,9 @@ data class RecipeResponse(
     val servings: String,
     val title: String,
     val calories: String,
-    val imageName: String, // Cambiado de Int a String para usar nombres de recursos
+    val imageName: String, // Cambiado a String para usar nombres de recursos
     val description: String = "",
-    val stats: RecipeStatsResponse, // Nuevas estadísticas
+    val stats: RecipeStatsResponse, // estadísticas
     val ingredients: List<IngredientesResponse> = emptyList(),
     val steps: List<StepPreparationResponse> = emptyList()
 ): Serializable

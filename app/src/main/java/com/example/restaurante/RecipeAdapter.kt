@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.restaurante.databinding.ItemRecipeLayoutBinding
 
 class RecipeAdapter(
-    private val recipes: List<RecipeResponse>,
+    private var recipes: List<RecipeResponse>,
     private val onItemClick: (RecipeResponse) -> Unit
 ) : RecyclerView.Adapter<ItemRecipeViewHolder>() {
 
@@ -36,7 +36,6 @@ class RecipeAdapter(
             time.text = recipe.time
             recipetitle.text = recipe.title
             calorie.text = recipe.calories
-//            tvServings.text = context.getString(R.string.recipe_servings, recipe.servings)
             tvServings.text = recipe.servings
             
             // Obtener el ID del recurso dinámicamente usando el nombre
@@ -57,5 +56,10 @@ class RecipeAdapter(
                 onItemClick(recipe)
             }
         }
+    }
+
+    fun updateRecipes(newRecipes: List<RecipeResponse>) {
+        recipes = newRecipes
+        notifyDataSetChanged()
     }
 }
