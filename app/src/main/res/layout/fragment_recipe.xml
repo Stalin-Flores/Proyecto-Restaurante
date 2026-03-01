@@ -89,12 +89,19 @@
                 android:src="@android:drawable/ic_menu_search"
                 app:tint="#B3FFFFFF" />
 
-            <TextView
+            <EditText
+                android:id="@+id/etSearchRecipes"
                 style="@style/SearchHintTextStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:text="@string/search_hint" />
+                android:background="@android:color/transparent"
+                android:hint="@string/search_hint"
+                android:textColorHint="#B3FFFFFF"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:maxLines="1"
+                android:autofillHints="search" />
         </LinearLayout>
     </LinearLayout>
 

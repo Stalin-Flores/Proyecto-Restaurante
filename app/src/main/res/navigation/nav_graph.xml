@@ -50,5 +50,11 @@
         android:id="@+id/perfilFragment"
         android:name="com.example.restaurante.PerfilFragment"
         android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_bienvenida"
+            app:destination="@id/bienvenida"
+            app:popUpTo="@id/bienvenida"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
