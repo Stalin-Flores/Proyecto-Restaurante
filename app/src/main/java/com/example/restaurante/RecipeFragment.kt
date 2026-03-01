@@ -5,13 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.restaurante.databinding.FragmentRecipeBinding
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import java.io.IOException
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class RecipeFragment : Fragment() {
     private var _binding: FragmentRecipeBinding? = null
@@ -26,17 +28,16 @@ class RecipeFragment : Fragment() {
         _binding = FragmentRecipeBinding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //pasa datos del email a la vista
+        // Pasa datos del email a la vista
         val emailRecibido = args.userEmail
-        binding.tvTitulo.text = "Hola Bienvenido\n$emailRecibido"
+        binding.tvGreeting.text = "Hola Bienvenido\n$emailRecibido"
 
-        // Cargar las recetas desde el JSON local
-        val recipeList = loadRecipesFromJson()
-
-        recipeAdapter = RecipeAdapter(recipeList) { recipe ->
+        // Inicializa el adaptador vacío
+        recipeAdapter = RecipeAdapter(emptyList()) { recipe ->
             val action =
                 RecipeFragmentDirections.actionRecipeFragmentToDetallesRecetaFragment(recipe)
             findNavController().navigate(action)
@@ -46,24 +47,31 @@ class RecipeFragment : Fragment() {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = recipeAdapter
         }
+
+        loadRecipesFromServiceAPI()
     }
 
-    private fun loadRecipesFromJson(): List<RecipeResponse> {
-        val jsonString: String
-        try {
-            // Leer el archivo desde assets
-            jsonString = requireContext().assets.open("recipes.json").bufferedReader()
-                .use { it.readText() }
-        } catch (ioException: IOException) {
-            ioException.printStackTrace()
-            return emptyList()
+    private fun loadRecipesFromServiceAPI() {
+        viewLifecycleOwner.lifecycleScope.launch {
+            try {
+                // Realizar la llamada en el hilo de IO
+                val recipes = withContext(Dispatchers.IO) {
+                    RetrofitRecipeClient.apiService.getRecipes()
+                }
+                if (recipes.isNotEmpty()) {
+                    recipeAdapter.updateRecipes(recipes)
+                    Snackbar.make(binding.root, "Se cargaron ${recipes.size} recetas", Snackbar.LENGTH_LONG)
+                        .show()
+                } else {
+                    Snackbar.make(binding.root, "No se encontraron recetas", Snackbar.LENGTH_SHORT).show()
+                }
+            } catch (e: Exception) {
+                Snackbar.make(binding.root, "Error al conectar con el servidor: ${e.message}", Snackbar.LENGTH_LONG)
+                    .setAction("REINTENTAR") { loadRecipesFromServiceAPI() }
+                    .show()
+            }
         }
-
-        // Convertir String JSON a Lista de Objetos usando Gson
-        val listType = object : TypeToken<List<RecipeResponse>>() {}.type
-        return Gson().fromJson(jsonString, listType)
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

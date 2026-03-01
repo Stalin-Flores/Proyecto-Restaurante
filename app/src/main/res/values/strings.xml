@@ -4,7 +4,7 @@
     <string name="app_name">RESTAURANTE</string>
 
     <!-- ==================== NAVEGACIÓN ==================== -->
-    <string name="nav_home">Home</string>
+    <string name="nav_home">Inicio</string>
     <string name="nav_favorites">Favoritos</string>
     <string name="nav_profile">Perfil</string>
 
@@ -29,6 +29,8 @@
 
     <!-- ==================== PANTALLA PRINCIPAL - RECETAS ==================== -->
     <string name="recetas_fit">Recetas Fit</string>
+    <string name="welcome_user">¡Hola, %s!</string>
+    <string name="cooking_question">¿Qué vamos a cocinar hoy?</string>
     <string name="search_hint">Buscar recetas saludables…</string>
     <string name="cat_todas">Todas</string>
     <string name="cat_desayuno">Desayuno</string>
@@ -36,17 +38,26 @@
     <string name="cat_cena">Cena</string>
     <string name="recetas_para_ti">Recetas para ti</string>
     <string name="ver_todas">Ver todas</string>
+    <string name="recipe_servings">👤 %s porciones</string>
 
     <!-- ==================== DETALLES DE LA RECETA ==================== -->
-    <string name="total_calories">TOTAL CALORIES</string>
+    <string name="recipe_detail_header">Detalle de la Receta</string>
+    <string name="total_calories">CALORÍAS TOTALES</string>
     <string name="kcal_example">420 Kcal</string>
-    <string name="recipe_example">Grilled Salmon with Quinoa</string>
-    <string name="ingredients">Ingredients</string>
-    <string name="start_cooking">Start Cooking</string>
-    <string name="image_description">Recipe image</string>
-    <string name="favorite_button_description">Add to favorites</string>
+    <string name="recipe_example">Salmón a la plancha con Quinoa</string>
+    <string name="recipe_description_example">Una receta saludable y deliciosa, ideal para mantener una dieta equilibrada sin sacrificar el sabor.</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="steps_preparation">Pasos de preparación</string>
+    <string name="start_cooking">Empezar a cocinar</string>
+    <string name="image_description">Imagen de la receta</string>
+    <string name="favorite_button_description">Añadir a favoritos</string>
+
+    <!-- Macros -->
+    <string name="macro_protein">PROTEÍNA</string>
+    <string name="macro_carbs">CARBOS</string>
+    <string name="macro_fats">GRASAS</string>
 
     <!-- ==================== PLACEHOLDER (por eliminar) ==================== -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
 
 </resources>

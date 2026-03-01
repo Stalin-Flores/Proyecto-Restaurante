@@ -6,11 +6,12 @@ data class RecipeResponse(
     val id: Int,
     val category: String,
     val time: String,
+    val servings: String,
     val title: String,
     val calories: String,
-    val imageName: String, // Cambiado de Int a String para usar nombres de recursos
+    val imageName: String, // Cambiado a String para usar nombres de recursos
     val description: String = "",
-    val stats: RecipeStatsResponse, // Nuevas estadísticas
+    val stats: RecipeStatsResponse, // estadísticas
     val ingredients: List<IngredientesResponse> = emptyList(),
     val steps: List<StepPreparationResponse> = emptyList()
 ): Serializable
@@ -23,13 +24,11 @@ data class RecipeStatsResponse(
 
 data class StepPreparationResponse(
     val id: Int,
-    val title: String,
     val description: String,
 ): Serializable
 
 data class IngredientesResponse(
     val id: Int,
-    val title: String,
     val description: String,
 ): Serializable
 

@@ -21,8 +21,11 @@
 
 
     <!-- ==================== COLORES DE DETALLES-RECETAS FIT ==================== -->
-    <color name="brand_green">#00D09C</color>
-    <color name="soft_green">#F1FAF7</color>
+    <color name="brand_green">#00C99E</color>
+    <color name="soft_green">#F4FBF9</color>
     <color name="text_dark">#1A1A1A</color>
+    <color name="card_stats_bg">#26FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
 
 </resources>

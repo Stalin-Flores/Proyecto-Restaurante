@@ -5,173 +5,195 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RecipeFragment"
-    android:background="@color/primary">
-    <!-- Menu Icon -->
-    <ImageView
-        android:id="@+id/ic_menu"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:src="@android:drawable/ic_menu_sort_by_size"
-        app:tint="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@color/brand_green">
 
-    <!-- Title -->
-    <TextView
-        android:id="@+id/tvTitulo"
-        style="@style/TitleTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Recetas Fit"
-        app:layout_constraintBottom_toBottomOf="@+id/ic_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ic_menu" />
-
-    <!-- Notifications Icon -->
-    <ImageView
-        android:id="@+id/ic_notifications"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="24dp"
-        android:src="@android:drawable/ic_popup_reminder"
-        app:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/ic_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ic_menu" />
-
-    <!-- ==================== SEARCH BAR ==================== -->
-    <LinearLayout
-        android:id="@+id/search_bar"
+    <!-- Header Toolbar -->
+    <RelativeLayout
+        android:id="@+id/headerToolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/bg_search_fab"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitulo">
+        android:layout_height="64dp"
+        android:paddingHorizontal="24dp"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@android:drawable/ic_menu_search"
-            app:tint="#B3FFFFFF" />
+            android:id="@+id/ic_menu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:tint="@color/white" />
 
         <TextView
-            style="@style/SearchHintTextStyle"
+            android:id="@+id/tvScreenTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:text="Buscar recetas saludables..." />
+            android:layout_centerInParent="true"
+            android:text="@string/recetas_fit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ic_notifications"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_popup_reminder"
+            app:tint="@color/white" />
+    </RelativeLayout>
+
+    <!-- User Welcome Section -->
+    <LinearLayout
+        android:id="@+id/welcomeSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="40dp"
+        app:layout_constraintTop_toBottomOf="@id/headerToolbar">
+
+        <TextView
+            android:id="@+id/tvGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Hola, Usuario!"
+            android:textColor="@color/white_80"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvInspiration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/cooking_question"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_search_fab"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#B3FFFFFF" />
+
+            <TextView
+                style="@style/SearchHintTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/search_hint" />
+        </LinearLayout>
     </LinearLayout>
 
-    <!-- ==================== MAIN CONTENT ==================== -->
-    <androidx.core.widget.NestedScrollView
+    <!-- Static White Content Container -->
+    <LinearLayout
+        android:id="@+id/mainContentContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/bg_bottom_sheet"
-        android:fillViewport="true"
+        android:background="@drawable/rounded_top_corners"
+        android:orientation="vertical"
+        android:layout_marginTop="-24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_bar">
+        app:layout_constraintTop_toBottomOf="@+id/welcomeSection">
 
-        <LinearLayout
+        <!-- Category Pills (Fixed) -->
+        <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="100dp">
+            android:layout_marginTop="32dp"
+            android:paddingHorizontal="24dp"
+            android:scrollbars="none">
 
-            <!-- ==================== CATEGORY PILLS ==================== -->
-            <HorizontalScrollView
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:paddingHorizontal="24dp"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <!-- Selected: Todas -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bg_pill_selected"
-                        android:paddingHorizontal="20dp"
-                        android:paddingVertical="8dp"
-                        android:text="Todas"
-                        android:textColor="@color/white"
-                        android:textStyle="bold" />
-
-                    <!-- Unselected: Desayuno -->
-                    <TextView
-                        style="@style/SecondaryTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:paddingVertical="8dp"
-                        android:text="Desayuno" />
-
-                    <!-- Unselected: Almuerzo -->
-                    <TextView
-                        style="@style/SecondaryTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:paddingVertical="8dp"
-                        android:text="Almuerzo" />
-
-                    <!-- Unselected: Cena -->
-                    <TextView
-                        style="@style/SecondaryTextStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:paddingVertical="8dp"
-                        android:text="Cena" />
-                </LinearLayout>
-            </HorizontalScrollView>
-
-            <!-- ==================== SECTION HEADER ==================== -->
-            <RelativeLayout
-                android:id="@+id/recetasParaTi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginTop="24dp">
+                android:orientation="horizontal"
+                android:paddingBottom="4dp">
 
                 <TextView
-                    style="@style/SectionTitleTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Recetas para ti" />
+                    android:background="@drawable/bg_pill_selected"
+                    android:paddingHorizontal="22dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/cat_todas"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
                 <TextView
-                    style="@style/ViewAllLinkStyle"
+                    style="@style/SecondaryTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:text="Ver todas" />
-            </RelativeLayout>
+                    android:layout_marginStart="16dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/cat_desayuno" />
 
-            <!-- ==================== RECIPE CARD 1 ==================== -->
+                <TextView
+                    style="@style/SecondaryTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/cat_almuerzo" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycleViewRecipe"
-                android:layout_width="match_parent"
+                <TextView
+                    style="@style/SecondaryTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/cat_cena" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Section Header (Fixed) -->
+        <RelativeLayout
+            android:id="@+id/recetasParaTi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                style="@style/SectionTitleTextStyle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp" />
+                android:text="@string/recetas_para_ti"
+                android:textSize="18sp" />
 
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+            <TextView
+                style="@style/ViewAllLinkStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ver_todas" />
+        </RelativeLayout>
+
+        <!-- Only the RecyclerView Scrolls -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="24dp"
+            tools:listitem="@layout/item_recipe_layout" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

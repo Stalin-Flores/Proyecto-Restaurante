@@ -1,0 +1,8 @@
+toml
+[versions]
+# ... otras versiones
+coil = "2.6.0"
+
+[libraries]
+# ... otras librerías
+coil-compose = { group = "io.coil-kt", name = "coil", version.ref = "coil" }

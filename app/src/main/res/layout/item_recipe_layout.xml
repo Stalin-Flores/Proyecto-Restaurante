@@ -26,10 +26,11 @@
                 android:layout_height="160dp">
 
                 <ImageView
+                    android:id="@+id/imageRecipe"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/comida1" />
+                    android:src="@drawable/pasta_alfredo" />
 
                 <!-- Rating Badge -->
                 <TextView
@@ -75,22 +76,36 @@
                 android:layout_marginTop="4dp"
                 android:text="Bowl de Avena y Frutos Rojos" />
 
-            <!-- Calories and Action Button -->
+            <!-- Calories, Servings and Action Button -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp">
 
-                <TextView
-                    style="@style/CalorieTextStyle"
-                    android:id="@+id/calorie"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="🔥 320 kcal" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/CalorieTextStyle"
+                        android:id="@+id/calorie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔥 320 kcal" />
+
+                    <TextView
+                        style="@style/ServingsTextStyle"
+                        android:id="@+id/tvServings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="👤 2 porciones" />
+
+                </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/imgrecipe"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_alignParentEnd="true"
